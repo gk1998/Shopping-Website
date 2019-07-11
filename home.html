@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>My Website</title>
+    	<link rel="stylesheet" href="./css/style.css">
+  	</head>
+  	<body>
+    <header style="padding-top: 20px; padding-bottom: 20px; border-bottom-width: 0px;">
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">E</span> - Shopping Cart</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="home.html">Home</a></li>
+            <li><a href="firstpage.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="accountlogin.html">My Account</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="slideshow-container">
+    	<div class="mySlides fade">
+  			<img src="./img/1.jpg" style="width:100%;">
+		</div>
+
+		<div class="mySlides fade">
+		  	<img src="./img/2.jpg" style="width:100%;">
+		</div>
+
+		<div class="mySlides fade">
+		  	<img src="./img/3.jpg" style="width:100%;">
+		</div>
+
+		<div class="mySlides fade">
+		  	<img src="./img/3.jpg" style="width:100%;">
+		</div>
+
+    	<div class="mySlides fade">
+  			<img src="./img/2.jpg" style="width:100%;">
+		</div>		
+    </div>
+    <br>
+
+	<div style="text-align:center">
+  		<span class="dot"></span> 
+  		<span class="dot"></span> 
+  		<span class="dot"></span>
+  		<span class="dot"></span>
+  		<span class="dot"></span>   		 
+	</div>
+
+	    <script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+ 			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			for (i = 0; i < slides.length; i++) {
+    			slides[i].style.display = "none";  
+  			}
+  			slideIndex++;
+  			if (slideIndex > slides.length) {slideIndex = 1}    
+  				for (i = 0; i < dots.length; i++) {
+    				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+  				slides[slideIndex-1].style.display = "block";  
+  				dots[slideIndex-1].className += " active";
+  				setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+		</script>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+         	<h1 align="center">Graphic Tees</h1>
+          	<a href="cover-shirt.html#pageshirt"><img src="./img/5.jpg"></a>
+        </div>
+        <div class="box">
+        	<h1 align="center">Plain T-Shirts</h1>
+          	<a href="cover-shirt.html#pageshirt"><img src="./img/6.jpg"></a>
+        </div>
+        <div class="box">
+          	<h1 align="center">Customized Designs</h1>
+          	<a href="cover-shirt.html#pageshitr"><img src="./img/7.png"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="boxes">
+   		<div class="container">
+        	<div class="box1">
+          		<h1 align="center">Couple Shirts</h1>
+          		<a href="cover-shirt.html#pageshirt"><img src="./img/8.jpg"></a>
+        	</div>
+        	<div class="box1">
+          		<h1 align="center">Mobile Covers</h1>
+          		<a href="cover-shirt.html#pagecover"><img src="./img/9.jpg"></a>
+        	</div>
+        	<div class="box1">
+          		<h1 align="center">Protection Glass</h1>
+          		<a href="cover-shirt.html#pagecover"><img src="./img/11.jpg"></a>
+        	</div>        	
+        </div>
+    </section>
+
+    <footer>
+      <p>E-Shopping Cart, Copyright &copy; 2019</p>
+    </footer>
+  </body>
+</html>

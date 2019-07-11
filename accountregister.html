@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>My Website</title>
+    	<link rel="stylesheet" href="./css/style.css">
+  	</head>
+  	<body background="./img/bg.jpg">
+    <header style="padding-top: 20px; padding-bottom: 20px; border-bottom-width: 0px;">
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">E</span> - Shopping Cart</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="firstpage.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li class="current"><a href="accountlogin.html">My Account</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <form class="login-section" action="insert.php" method="post">
+      <img src="./img/avatar.jpg" class="avatar">
+      <h1 align="center">Sign Up</h1>
+      <label class="textlabel" for="username">Username</label>
+      <input class="inputbox" type="text" placehoder="Username" align="center" name="username" required>
+      <label class="textlabel" for="password">Password</label>
+      <input class="inputbox" type="Password" placehoder="Password" align="center" name="password" required>
+      <input class="buttonsign" type="submit" value="Sign Up" align="center">
+      <p class="lines">Already have an account,<a href="accountlogin.html">Sign In</a></p>
+    </form>
+
+  </body>
+</html>

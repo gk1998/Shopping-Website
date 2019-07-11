@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>My Website</title>
+    	<link rel="stylesheet" href="./css/style.css">
+      <script src="cartcalc.js" async></script>
+      <script type="text/javascript">
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+      </script>
+  	</head>
+
+  	<body>
+    <header style="padding-top: 20px; padding-bottom: 20px; border-bottom-width: 0px;">
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">E</span> - Shopping Cart</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="firstpage.html">About</a></li>
+            <li  class="current"><a href="products.html">Products</a></li>
+            <li><a href="accountlogin.html">My Account</a></li>
+            <li><a href="cover.html#chosen">My Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="pagecover">
+    <section>
+      <div style="background-color: red; color: yellow;">
+        <h1 align="center" style="margin-top: 0px; margin-bottom: 0px;"><a href="#"  onclick="return show('pageshirt','pagecover')">T-Shirts</a> / Mobile Covers</h1>
+      </div></h1>
+    </section>
+
+    <section id="boxes">
+      <div class="shop-items">
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/mc1.jpg">
+          <span class="shop-item-title"><h1>MC1</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary" id="myBtn" type="button" style="margin-right: 5px;">Details</button>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>         
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/mc2.jpg">
+          <span class="shop-item-title"><h1>MC2</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/mc3.jpg"> 
+          <span class="shop-item-title"><h1>MC3</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/mc4.jpg">
+          <span class="shop-item-title"><h1>MC4</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/mc5.jpg">
+          <span class="shop-item-title"><h1>MC5</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>                   
+      </div>
+    </section>
+    </div>
+
+
+    <div id="pageshirt">
+    <section>
+      <div style="background-color: red; color: yellow;">
+        <h1 align="center" style="margin-top: 0px; margin-bottom: 0px;">T-Shirts / <a href="#"  onclick="return show('pagecover','pageshirt')">Mobile Covers</a></h1>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="shop-items">
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/a1.jpg">
+          <span class="shop-item-title"><h1>S-A1</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/l1.jpg">
+          <span class="shop-item-title"><h1>S-L1</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/h1.jpg"> 
+          <span class="shop-item-title"><h1>S-H1</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/ls1.jpg">
+          <span class="shop-item-title"><h1>S-LS1</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/r1.jpg">
+          <span class="shop-item-title"><h1>S-R1</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/h2.jpg">
+          <span class="shop-item-title"><h1>S-H2</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/l2.jpg">
+          <span class="shop-item-title"><h1>S-L2</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/a2.jpg">
+          <span class="shop-item-title"><h1>S-A2</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>A2 Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/r2.jpg">
+          <span class="shop-item-title"><h1>S-R2</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/ls2.jpg">
+          <span class="shop-item-title"><h1>S-LS2</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/a3.jpg">
+          <span class="shop-item-title"><h1>S-A3</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/r3.jpg">
+          <span class="shop-item-title"><h1>S-R3</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>RRs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/h3.jpg">
+          <span class="shop-item-title"><h1>S-H3</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/ls3.jpg">
+          <span class="shop-item-title"><h1>S-LS3</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/l3.jpg">
+          <span class="shop-item-title"><h1>S-L3</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/r4.jpg">
+          <span class="shop-item-title"><h1>S-R4</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/a4.jpg">
+          <span class="shop-item-title"><h1>S-A4</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/h4.jpg">
+          <span class="shop-item-title"><h1>S-H4</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/ls4.jpg">
+          <span class="shop-item-title"><h1>S-LS4</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <img class="shop-item-image" src="./img/l4.jpg">
+          <span class="shop-item-title"><h1>S-L4</h1></span>
+          <div class="shop-item-details">
+            <span class="shop-item-price"><h1>Rs.250</h1></span>
+            <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+          </div>
+        </div>                
+      </div>
+    </section>
+    </div>
+
+
+    <section id="chosen" class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rs.0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+
+    <footer>
+      <p>E-Shopping Cart, Copyright &copy; 2019</p>
+    </footer>
+
+  </body>
+</html>

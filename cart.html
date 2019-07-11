@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>My Website</title>
+    	<link rel="stylesheet" href="./css/style.css">
+      <script src="cartcalc.js" async></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	</head>
+  	<body>
+    <header style="padding-top: 20px; padding-bottom: 20px; border-bottom-width: 0px;">
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">E</span> - Shopping Cart</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="firstpage.html">About</a></li>
+            <li ><a href="products.html">Products</a></li>
+            <li><a href="accountlogin.html">My Account</a></li>
+            <li class="current"><a href="cover.html#chosen">My Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="chosen" class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rs.0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+    <footer>
+      <p>E-Shopping Cart, Copyright &copy; 2019</p>
+    </footer>
+
+  </body>
+</html>
